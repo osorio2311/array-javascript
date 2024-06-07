@@ -56,8 +56,8 @@ let arrayD=new Array(3);
 
     console.log(arrayD);
 
-// Generar y llenar la diagonal principal con números aleatorios
-// for (let i = 0; i < 3; i++) {
-//     const cellId = `d${i}${i}`;
-//     document.getElementById(cellId).innerText = Math.floor(Math.random() * 100);
-// }
+//Generar y llenar la diagonal principal con números aleatorios
+for (let i = 0; i < 3; i++) {
+    const cellId = `d${i}${i}`;
+    document.getElementById(cellId).innerText = Math.floor(Math.random() * 100);
+}

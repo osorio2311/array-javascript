@@ -17,9 +17,47 @@ for (let indice in array){//recorre el array con otro bucle for tomando en cuent
     }
 }
 
-//
+/****************************************************** */
 let arrayMascotas=["perro","gato","tortuga"];
 //recorrer el array mascotas con el for of
 for (let mascota of arrayMascotas) {
     console.log(mascota);
 }
+
+
+/****************************************************** */
+
+let matriz=[[5,58,9],[7,8,4],[1,5,45],[2,4,6,54]];
+console.log(matriz.length);//nos trae las filas
+//recorrer el array bidimensional de otra manera
+for (let f=0; f<matriz.length; f++) {//lo recorre 4 veces
+    for (let c=0; c<matriz.length[f]; c++){
+        console.log(`Valor de la fila ${f} y columna ${c} es ${matriz[f][c]}`);
+    }
+}
+
+/****************************************************** */
+
+/**
+ ACTIVIDAD RESUELTA 3.2
+ Crear un Array 3x3, asignarle valores y mostrar la diagonal principal
+ */
+let arrayD=new Array(3);
+    for(let f=0; f<arrayD.length; f++){
+        arrayD[f]=new Array(3);
+        for(let c=0; c<arrayD[f].length; c++){
+            arrayD[f][c]=Math.floor(Math.random()*100+1);
+            document.getElementById("d"+f+c).innerHTML=arrayD[f][c];
+            if (f==c){
+                document.getElementById("d"+f+c).style.color="red";
+            }
+        }
+    }
+
+    console.log(arrayD);
+
+// Generar y llenar la diagonal principal con números aleatorios
+// for (let i = 0; i < 3; i++) {
+//     const cellId = `d${i}${i}`;
+//     document.getElementById(cellId).innerText = Math.floor(Math.random() * 100);
+// }

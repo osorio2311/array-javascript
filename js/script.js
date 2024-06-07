@@ -61,7 +61,7 @@ console.log(arrayFC);
 
  let coloresRGB = ["#f39c12","#C0F312","#12F3E5","#F312AF","#F31212"];
  let nombreRGB = ["Naranja","Lima","Turquesa","Rosa","Rojo"];
-let color= ["#8000FF"];
+// let color= ["#8000FF"];
 let colores=document.querySelector("#colores"); //cogemos el id del html
 for (let i = 0; i < nombreRGB.length; i++) {
     let opcion=document.createElement("option");//creamos el option del select que tenemos en el HTML
